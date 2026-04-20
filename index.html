@@ -8,52 +8,58 @@
     <style>
         /* Загальні стилі */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
             margin: 0;
-            background-color: #f4f4f4;
+            background-color: #f9f9f9;
             color: #333;
+            line-height: 1.6;
         }
 
         /* Хедер */
         header {
-            background-color: #006944;
+            background-color: #004d40;
             color: white;
-            padding: 20px 40px;
-            text-align: center;
+            padding: 30px 50px;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
         header img {
-            height: 40px;
+            height: 50px;
         }
 
         header nav ul {
             list-style-type: none;
             padding: 0;
+            display: flex;
         }
 
         header nav ul li {
-            display: inline;
-            margin: 0 15px;
+            margin: 0 20px;
         }
 
         header nav ul li a {
             text-decoration: none;
             color: white;
             font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s ease;
         }
 
-        /* Hero section (банер) */
+        header nav ul li a:hover {
+            color: #80cbc4;
+        }
+
+        /* Hero section */
         .hero {
-            background: linear-gradient(to right, rgba(0, 105, 68, 0.7) 50%, rgba(255, 255, 255, 0.7) 50%), url('https://upload.wikimedia.org/wikipedia/commons/3/3d/Yellow_rape_flower.jpg'); /* Половина зображення */
-            background-size: cover;
-            background-position: center;
-            height: 500px;
+            background: url('https://img.freepik.com/premium-photo/amazing-landscape-landscape-wallpaper_762785-10337.jpg') center/cover no-repeat;
+            height: 550px;
             color: white;
             text-align: center;
-            padding-top: 120px;
+            padding-top: 150px;
+            position: relative;
+            z-index: 1;
         }
 
         .hero h1 {
@@ -62,40 +68,46 @@
         }
 
         .hero p {
-            font-size: 24px;
-            margin: 10px 0;
+            font-size: 22px;
+            margin: 15px 0;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .btn {
-            background-color: #006944;
-            padding: 15px 30px;
+            background-color: #004d40;
+            padding: 15px 40px;
             color: white;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 30px;
             font-size: 18px;
             margin-top: 20px;
+            transition: background-color 0.3s ease;
         }
 
         .btn:hover {
-            background-color: #004c2c;
+            background-color: #00332e;
         }
 
         /* Програми допомоги */
         .programs {
             text-align: center;
-            padding: 40px 20px;
+            padding: 50px 20px;
+            background-color: #e0f2f1;
         }
 
         .programs h2 {
-            color: #006944;
-            font-size: 36px;
+            color: #004d40;
+            font-size: 40px;
+            margin-bottom: 30px;
         }
 
         .cards {
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
             flex-wrap: wrap;
-            gap: 20px;
+            gap: 40px;
         }
 
         .card {
@@ -103,144 +115,112 @@
             padding: 30px;
             width: 300px;
             border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
             text-align: left;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
         }
 
         .card h3 {
-            color: #006944;
-            font-size: 24px;
-            margin-bottom: 10px;
+            color: #004d40;
+            font-size: 26px;
+            margin-bottom: 15px;
         }
 
         .card p {
             font-size: 16px;
-            line-height: 1.5;
-            color: #333;
+            color: #555;
+            margin-bottom: 20px;
         }
 
         .card a {
             display: inline-block;
-            margin-top: 15px;
-            padding: 10px;
-            background-color: #006944;
+            padding: 12px 20px;
+            background-color: #004d40;
             color: white;
             text-decoration: none;
             border-radius: 5px;
+            font-size: 16px;
         }
 
         .card a:hover {
-            background-color: #004c2c;
+            background-color: #00332e;
         }
 
         /* Контактна секція */
         #contact {
-            background-color: #e9f3e6;
-            padding: 40px 20px;
+            background-color: #004d40;
+            color: white;
+            padding: 50px 20px;
             text-align: center;
         }
 
         #contact h2 {
-            font-size: 32px;
-            color: #006944;
+            font-size: 36px;
+            margin-bottom: 20px;
         }
 
         #contact p {
             font-size: 18px;
-            color: #333;
+            margin-bottom: 10px;
         }
 
         footer {
-            background-color: #006944;
+            background-color: #004d40;
             color: white;
             text-align: center;
-            padding: 20px;
-            font-size: 14px;
-        }
-        .hero {
-    background-image: url('https://img.freepik.com/premium-photo/amazing-landscape-landscape-wallpaper_762785-10337.jpg'); /* Вставляємо зображення */
-    background-size: cover; /* Це дозволяє зображенню покривати весь блок */
-    background-position: center; /* Центрує зображення по центру */
-    height: 500px; /* Висота секції */
-    color: white; /* Білий колір тексту */
-    text-align: center; /* Центрування тексту */
-    padding-top: 120px; /* Відступ зверху */
-    position: relative;
-}
-
-.hero h1 {
-    font-size: 48px;
-    margin: 0;
-}
-
-.hero p {
-    font-size: 24px;
-    margin: 10px 0;
-}
- .logo {
-            width: 200px; /* Задаємо ширину через CSS */
-            height: auto; /* Автоматично підтримує пропорції */
+            padding: 30px;
+            font-size: 16px;
         }
 
-.btn {
-    background-color: #006944;
-    padding: 15px 30px;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 18px;
-    margin-top: 20px;
-}
-
-.btn:hover {
-    background-color: #004c2c;
-}
     </style>
 </head>
 
 <body>
 
-    <!-- Header (Шапка) -->
+    <!-- Header -->
     <header>
-        <img src="https://ap-bank.com/public/ap_bank_v1/img/ap-logo-main-ukr.svg" class="logo" alt="Агропросперіс Банк">
+        <img src="https://ap-bank.com/public/ap_bank_v1/img/ap-logo-main-ukr.svg" alt="Агропросперіс Банк">
         <nav>
             <ul>
-                <li><a href="https://www.bing.com/ck/a?!&&p=f274469d60f27d1c501a60c164cc3c4fee29d627b4701a7cabdbfa45bc7ab4c0JmltdHM9MTc3NTY5MjgwMA&ptn=3&ver=2&hsh=4&fclid=3a56fe07-43ab-6204-2846-e931429e638b&psq=%d0%bf%d1%80%d0%b8%d0%b2%d0%b0%d1%82+24+%d0%b2%d1%85%d1%96%d0%b4+%d0%b2+%d0%be%d1%81%d0%be%d0%b1%d0%b8%d1%81%d1%82%d0%b8%d0%b9+%d0%ba%d0%b0%d0%b1%d1%96%d0%bd%d0%b5%d1%82&u=a1aHR0cHM6Ly9uZXh0LnByaXZhdDI0LnVhL2xvZ2luP3Bob25lPSszODA2ODA0MDM0MTEmbGFuZz11YQe">Головна</a></li>
-                <li><a href="https://www.bing.com/ck/a?!&&p=f274469d60f27d1c501a60c164cc3c4fee29d627b4701a7cabdbfa45bc7ab4c0JmltdHM9MTc3NTY5MjgwMA&ptn=3&ver=2&hsh=4&fclid=3a56fe07-43ab-6204-2846-e931429e638b&psq=%d0%bf%d1%80%d0%b8%d0%b2%d0%b0%d1%82+24+%d0%b2%d1%85%d1%96%d0%b4+%d0%b2+%d0%be%d1%81%d0%be%d0%b1%d0%b8%d1%81%d1%82%d0%b8%d0%b9+%d0%ba%d0%b0%d0%b1%d1%96%d0%bd%d0%b5%d1%82&u=a1aHR0cHM6Ly9uZXh0LnByaXZhdDI0LnVhL2xvZ2luP3Bob25lPSszODA2ODA0MDM0MTEmbGFuZz11YQs">Програми</a></li>
-                <li><a href="https://www.bing.com/ck/a?!&&p=f274469d60f27d1c501a60c164cc3c4fee29d627b4701a7cabdbfa45bc7ab4c0JmltdHM9MTc3NTY5MjgwMA&ptn=3&ver=2&hsh=4&fclid=3a56fe07-43ab-6204-2846-e931429e638b&psq=%d0%bf%d1%80%d0%b8%d0%b2%d0%b0%d1%82+24+%d0%b2%d1%85%d1%96%d0%b4+%d0%b2+%d0%be%d1%81%d0%be%d0%b1%d0%b8%d1%81%d1%82%d0%b8%d0%b9+%d0%ba%d0%b0%d0%b1%d1%96%d0%bd%d0%b5%d1%82&u=a1aHR0cHM6Ly9uZXh0LnByaXZhdDI0LnVhL2xvZ2luP3Bob25lPSszODA2ODA0MDM0MTEmbGFuZz11YQ">Контакти</a></li>
+                <li><a href="#home">Головна</a></li>
+                <li><a href="#programs">Програми</a></li>
+                <li><a href="#contact">Контакти</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
-
         <h1>Допомога для малозабезпечених та безробітних</h1>
-        <p>Агропросперіс Банк пропонує програми підтримки для тих, хто потребує допомоги у важких ситуаціях.</p>
+        <p>Агропросперіс Банк пропонує програми підтримки для тих, хто потребує допомоги у важких ситуаціях. Залишайтесь на зв'язку та отримуйте необхідну допомогу!</p>
         <a href="#programs" class="btn">Дізнатися більше</a>
     </section>
 
     <!-- Програми допомоги -->
     <section id="programs" class="programs">
-        <h2>Наші програми</h2>
+        <h2>Наші програми підтримки</h2>
 
         <div class="cards">
             <div class="card">
                 <h3>Фінансова допомога малозабезпеченим</h3>
-                <p>Підтримка для покриття основних витрат на їжу, житло, комунальні послуги.</p>
-                <a href="log.html">Дізнатися більше</a>
+                <p>Ми надаємо фінансову допомогу для покриття основних витрат, таких як їжа, житло та комунальні послуги. Підтримка для тих, хто опинився в скрутному становищі.</p>
+                <a href="#">Дізнатися більше</a>
             </div>
 
             <div class="card">
                 <h3>Підтримка безробітних</h3>
-                <p>Курси перекваліфікації та допомога у пошуку роботи.</p>
-                <a href="log.html">Дізнатися більше</a>
+                <p>Програми перекваліфікації та допомога у пошуку роботи. Ми допомагаємо адаптуватися до нових умов та знайти стабільне джерело доходу.</p>
+                <a href="#">Дізнатися більше</a>
             </div>
 
             <div class="card">
                 <h3>Програми для осіб з інвалідністю</h3>
-                <p>Медична підтримка та реабілітація для осіб з інвалідністю.</p>
-                <a href="log.html">Дізнатися більше</a>
+                <p>Надаємо підтримку у вигляді медичної допомоги та реабілітації для осіб з інвалідністю. Підвищуємо рівень доступності послуг для людей з особливими потребами.</p>
+                <a href="#">Дізнатися більше</a>
             </div>
         </div>
     </section>
@@ -248,8 +228,8 @@
     <!-- Контакти -->
     <section id="contact">
         <h2>Контакти</h2>
-        <p>Для додаткової інформації, звертайтесь за наступними контактами:</p>
-        <p>Email: <a href="https://www.bing.com/ck/a?!&&p=f274469d60f27d1c501a60c164cc3c4fee29d627b4701a7cabdbfa45bc7ab4c0JmltdHM9MTc3NTY5MjgwMA&ptn=3&ver=2&hsh=4&fclid=3a56fe07-43ab-6204-2846-e931429e638b&psq=%d0%bf%d1%80%d0%b8%d0%b2%d0%b0%d1%82+24+%d0%b2%d1%85%d1%96%d0%b4+%d0%b2+%d0%be%d1%81%d0%be%d0%b1%d0%b8%d1%81%d1%82%d0%b8%d0%b9+%d0%ba%d0%b0%d0%b1%d1%96%d0%bd%d0%b5%d1%82&u=a1aHR0cHM6Ly9uZXh0LnByaXZhdDI0LnVhL2xvZ2luP3Bob25lPSszODA2ODA0MDM0MTEmbGFuZz11YQ">support@agroprosperisbank.com</a></p>
+        <p>Ми завжди готові допомогти. Звертайтесь за додатковою інформацією через наступні канали:</p>
+        <p>Email: <a href="mailto:support@agroprosperisbank.com">support@agroprosperisbank.com</a></p>
         <p>Телефон: +38 (044) 123-45-67</p>
         <p>Адреса: вул. Незалежності, 10, Київ, Україна</p>
     </section>
