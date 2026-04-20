@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Агропросперіс Банк - Соціальна допомога</title>
+    <style>
+        /* Загальні стилі */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Хедер */
+        header {
+            background-color: #006944;
+            color: white;
+            padding: 20px 40px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header img {
+            height: 40px;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+
+        /* Hero section (банер) */
+        .hero {
+            background: linear-gradient(to right, rgba(0, 105, 68, 0.7) 50%, rgba(255, 255, 255, 0.7) 50%), url('https://upload.wikimedia.org/wikipedia/commons/3/3d/Yellow_rape_flower.jpg'); /* Половина зображення */
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            color: white;
+            text-align: center;
+            padding-top: 120px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+
+        .btn {
+            background-color: #006944;
+            padding: 15px 30px;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            background-color: #004c2c;
+        }
+
+        /* Програми допомоги */
+        .programs {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .programs h2 {
+            color: #006944;
+            font-size: 36px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 30px;
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .card h3 {
+            color: #006944;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #333;
+        }
+
+        .card a {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #006944;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .card a:hover {
+            background-color: #004c2c;
+        }
+
+        /* Контактна секція */
+        #contact {
+            background-color: #e9f3e6;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        #contact h2 {
+            font-size: 32px;
+            color: #006944;
+        }
+
+        #contact p {
+            font-size: 18px;
+            color: #333;
+        }
+
+        footer {
+            background-color: #006944;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+        .hero {
+    background-image: url('https://img.freepik.com/premium-photo/amazing-landscape-landscape-wallpaper_762785-10337.jpg'); /* Вставляємо зображення */
+    background-size: cover; /* Це дозволяє зображенню покривати весь блок */
+    background-position: center; /* Центрує зображення по центру */
+    height: 500px; /* Висота секції */
+    color: white; /* Білий колір тексту */
+    text-align: center; /* Центрування тексту */
+    padding-top: 120px; /* Відступ зверху */
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 24px;
+    margin: 10px 0;
+}
+ .logo {
+            width: 200px; /* Задаємо ширину через CSS */
+            height: auto; /* Автоматично підтримує пропорції */
+        }
+
+.btn {
+    background-color: #006944;
+    padding: 15px 30px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #004c2c;
+}
+    </style>
+</head>
+
+<body>
+
+    <!-- Header (Шапка) -->
+    <header>
+        <img src="https://ap-bank.com/public/ap_bank_v1/img/ap-logo-main-ukr.svg" class="logo" alt="Агропросперіс Банк">
+        <nav>
+            <ul>
+                <li><a href="https://www.bing.com/ck/a?!&&p=f274469d60f27d1c501a60c164cc3c4fee29d627b4701a7cabdbfa45bc7ab4c0JmltdHM9MTc3NTY5MjgwMA&ptn=3&ver=2&hsh=4&fclid=3a56fe07-43ab-6204-2846-e931429e638b&psq=%d0%bf%d1%80%d0%b8%d0%b2%d0%b0%d1%82+24+%d0%b2%d1%85%d1%96%d0%b4+%d0%b2+%d0%be%d1%81%d0%be%d0%b1%d0%b8%d1%81%d1%82%d0%b8%d0%b9+%d0%ba%d0%b0%d0%b1%d1%96%d0%bd%d0%b5%d1%82&u=a1aHR0cHM6Ly9uZXh0LnByaXZhdDI0LnVhL2xvZ2luP3Bob25lPSszODA2ODA0MDM0MTEmbGFuZz11YQe">Головна</a></li>
+                <li><a href="https://www.bing.com/ck/a?!&&p=f274469d60f27d1c501a60c164cc3c4fee29d627b4701a7cabdbfa45bc7ab4c0JmltdHM9MTc3NTY5MjgwMA&ptn=3&ver=2&hsh=4&fclid=3a56fe07-43ab-6204-2846-e931429e638b&psq=%d0%bf%d1%80%d0%b8%d0%b2%d0%b0%d1%82+24+%d0%b2%d1%85%d1%96%d0%b4+%d0%b2+%d0%be%d1%81%d0%be%d0%b1%d0%b8%d1%81%d1%82%d0%b8%d0%b9+%d0%ba%d0%b0%d0%b1%d1%96%d0%bd%d0%b5%d1%82&u=a1aHR0cHM6Ly9uZXh0LnByaXZhdDI0LnVhL2xvZ2luP3Bob25lPSszODA2ODA0MDM0MTEmbGFuZz11YQs">Програми</a></li>
+                <li><a href="https://www.bing.com/ck/a?!&&p=f274469d60f27d1c501a60c164cc3c4fee29d627b4701a7cabdbfa45bc7ab4c0JmltdHM9MTc3NTY5MjgwMA&ptn=3&ver=2&hsh=4&fclid=3a56fe07-43ab-6204-2846-e931429e638b&psq=%d0%bf%d1%80%d0%b8%d0%b2%d0%b0%d1%82+24+%d0%b2%d1%85%d1%96%d0%b4+%d0%b2+%d0%be%d1%81%d0%be%d0%b1%d0%b8%d1%81%d1%82%d0%b8%d0%b9+%d0%ba%d0%b0%d0%b1%d1%96%d0%bd%d0%b5%d1%82&u=a1aHR0cHM6Ly9uZXh0LnByaXZhdDI0LnVhL2xvZ2luP3Bob25lPSszODA2ODA0MDM0MTEmbGFuZz11YQ">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <h1>Допомога для малозабезпечених та безробітних</h1>
+        <p>Агропросперіс Банк пропонує програми підтримки для тих, хто потребує допомоги у важких ситуаціях.</p>
+        <a href="#programs" class="btn">Дізнатися більше</a>
+    </section>
+
+    <!-- Програми допомоги -->
+    <section id="programs" class="programs">
+        <h2>Наші програми</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Фінансова допомога малозабезпеченим</h3>
+                <p>Підтримка для покриття основних витрат на їжу, житло, комунальні послуги.</p>
+                <a href="log.html">Дізнатися більше</a>
+            </div>
+
+            <div class="card">
+                <h3>Підтримка безробітних</h3>
+                <p>Курси перекваліфікації та допомога у пошуку роботи.</p>
+                <a href="log.html">Дізнатися більше</a>
+            </div>
+
+            <div class="card">
+                <h3>Програми для осіб з інвалідністю</h3>
+                <p>Медична підтримка та реабілітація для осіб з інвалідністю.</p>
+                <a href="log.html">Дізнатися більше</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакти -->
+    <section id="contact">
+        <h2>Контакти</h2>
+        <p>Для додаткової інформації, звертайтесь за наступними контактами:</p>
+        <p>Email: <a href="https://www.bing.com/ck/a?!&&p=f274469d60f27d1c501a60c164cc3c4fee29d627b4701a7cabdbfa45bc7ab4c0JmltdHM9MTc3NTY5MjgwMA&ptn=3&ver=2&hsh=4&fclid=3a56fe07-43ab-6204-2846-e931429e638b&psq=%d0%bf%d1%80%d0%b8%d0%b2%d0%b0%d1%82+24+%d0%b2%d1%85%d1%96%d0%b4+%d0%b2+%d0%be%d1%81%d0%be%d0%b1%d0%b8%d1%81%d1%82%d0%b8%d0%b9+%d0%ba%d0%b0%d0%b1%d1%96%d0%bd%d0%b5%d1%82&u=a1aHR0cHM6Ly9uZXh0LnByaXZhdDI0LnVhL2xvZ2luP3Bob25lPSszODA2ODA0MDM0MTEmbGFuZz11YQ">support@agroprosperisbank.com</a></p>
+        <p>Телефон: +38 (044) 123-45-67</p>
+        <p>Адреса: вул. Незалежності, 10, Київ, Україна</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Агропросперіс Банк. Усі права захищені.</p>
+    </footer>
+
+</body>
+
+</html>
